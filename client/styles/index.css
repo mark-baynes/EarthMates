@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font: 14px 'Newsreader', 'Philosopher', Helvetica, Arial, sans-serif;
+  color: #004a8f;
+}
+
+.h2 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.p {
+  padding: 10px;
+  margin: 10px;
+  font: 14px 'Newsreader', 'Philosopher', Helvetica, Arial, sans-serif
+}
+
+
+/* Styling for Header.tsx */
+.header-container {
+  background-color: #ffffff;
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.title-container {
+  background-color: #ffffff;
+  color: #426B1F;
+  width: 100vw;
+  padding: 0px 50px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  padding: 5px;
+  color: #426B1F;
+}
+
+.title-link {
+  text-decoration: none;
+  color: #426B1F;
+}
+
+.header-title {
+  padding: 5px;
+  font-size: 3em;
+  word-spacing: -1px;
+  font-weight: 100;
+}
+
+.header-title:hover {
+  cursor: pointer;
+}
+
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.button {
+  margin-right: 20px;
+  border: none;
+  color: #ffffff;
+  background-color: #426B1F;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #426B1F;
+}
+
+/* Home.tsx styling */
+.event-container {
+  width: 100vw;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.crEve-button {
+  margin: 20px;
+  border: none;
+  color: #ffffff;
+  background-color: #426B1F;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+.crEve-button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #426B1F;
+}
+
+/* Nav.tsx */
+.nav-buttons {
+  display: flex;
+  margin-right: auto;
+  width: 100%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  background-color: rgb(247, 245, 242);
+  color: #426B1F;
+  border-radius: 5px;
+}
+
+.page-title {
+  margin: 60px 20px;
+  padding: 0 15%;
+  text-align: center;
+  color: black;
+  font-size: 4em;
+  line-height: 1.5;
+  word-spacing: -2.5px;
+  font-weight: 50;
+}
+
+/* EventsList.tsx */
+.events-container {
+  padding: 20px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 20px;
+  width: 30%;
+  max-width: 450px;
+  background-color: rgb(247, 245, 242);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.event-card:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.event-image {
+  /* width: 100px; */
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.event-details {
+  border-radius: 0 0 5px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* EventDetail.tsx */
+.evDet {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.eventBox {
+  padding: 20px;
+  margin: 20px;
+  width: 80vw;
+  background-color: rgb(247, 245, 242);
+  color: #426B1F;
+  border-radius: 5px;
+}
+
+.event-button {
+  margin: 10px;
+  border: none;
+  width: 8%;
+  color: #ffffff;
+  background-color: #426B1F;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-weight: lighter;
+  align-items: flex-end;
+}
+
+.event-button:hover {
+  cursor: pointer;
+  background-color: rgb(247, 245, 242);
+  color: #426B1F;
+}
+
+/* AddEvent.tsx form */
+.form-group {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(247, 245, 242);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-event {
+  margin: 10px auto;
+  border: none;
+  width: 15%;
+  align-items: center;
+  color: #ffffff;
+  background-color: #426B1F;
+  padding: 12px 22px;
+  border-radius: 5px;
+  font-weight: lighter;
+  display: block;
+}
+
+.post-event:hover {
+  cursor: pointer;
+  background-color: rgb(247, 245, 242);
+  color: #426B1F;
+}
+
+/* EditEvent.tsx */
+.edit-event {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(247, 245, 242);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* EventDetailAuthenticated.tsx */
+.join-button {
+  margin: 10px;
+  width: 10%;
+  align-items: center;
+  color: #ffffff;
+  background-color: #426B1F;
+  border-radius: 5px;
+  font-weight: lighter;
+  padding: 10px;
+  margin: 20px;
+}
+
+.join-button.joined {
+  cursor: pointer;
+  background-color: rgb(247, 245, 242);
+  color: #426B1F;
+  border-color: #426B1F;
+}
+
+.join-button:hover {
+  cursor: pointer;
+  background-color: rgb(247, 245, 242);
+  color: #426B1F;
+}
+
+
+@media only screen and (min-width: 995px) {
+  .event-card {
+    margin: 10px;
+  }
+
+  .page-title {
+    margin: 40px 20px;
+    font-size: 3em;
+  }
+
+  .join-button, .crEve-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 994px) {
+  .logo {
+    font-size: .5em;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin: 12px;
+  }
+
+  .page-title {
+    margin: 30px 15px;
+    font-size: 2.5em;
+  }
+
+  .event-card {
+    margin: 10px;
+  }
+
+  .event-image {
+    height: 100px;
+  }
+
+  .join-button, .crEve-button {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin: 8px;
+    align-items: center;
+  }
+  
+  .nav a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .logo {
+    font-size: 0.5em;
+  }
+  
+  .nav a {
+    font-size: 1em;
+  }
+
+  .button {
+    padding: 6px 14px;
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .page-title {
+    margin: 30px 15px;
+    font-size: 2.5em;
+  }
+
+  .event-card {
+    margin: 5px;
+  }
+
+  .event-image {
+    height: 80px;
+  }
+
+  .join-button, .crEve-button {
+    padding: 6px 8px;
+    font-size: 10px;
+    margin: 4px;
+  }
+
+  .join-button span, .crEve-button span {
+    text-align: center;
+  }
+}
+

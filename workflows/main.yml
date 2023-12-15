@@ -1,0 +1,44 @@
+# Documentation: https://github.com/marketplace/actions/lint-action
+# Comments provided by AI with minor edits
+
+ # This is a configuration file for GitHub Actions, a tool that allows you to automate your software workflows.
+ # It makes sure that the code has been linted and checks to see that any tests are passing
+ # This specific configuration is named "Node.js CI" and it is triggered on every 'push' or 'pull request' event on the 'main' and 'dev' branches.
+ name: Node.js CI
+
+ # Here we define when this workflow should be triggered. You can add or remove branch names from this.
+ on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+ # Jobs are a set of steps that execute on the same runner.
+ jobs:
+  tests:
+    # This job runs on an Ubuntu runner.
+    runs-on: ubuntu-latest
+    steps:
+      # This step archives npm failure logs if any step in the job fails.
+      - name: Archive npm failure logs
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: npm-logs
+          path: ~/.npm/_logs
+      # This step sets up Node.js on the runner.
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      # This step checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
+      - uses: actions/checkout@v2
+      # This step installs all the dependencies defined in your package.json file.
+      - name: Install modules
+        run: npm i
+      # This step runs the linting script defined in your package.json file.
+      - name: Run linting
+        run: npm run lint
+      # This step runs the unit tests script defined in your package.json file.
+      - name: Run unit tests
+        run: npm run test
