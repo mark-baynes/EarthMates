@@ -1,5 +1,7 @@
 🌎 EarthMates 🌎
 
+[Visit the EarhtMates Site Here](https://earth-mates.devacademy.nz/)
+
 Final Project (collaboration with Dev Academy Group)
 
 The idea of the app is to create a site for Earth Friendly Events, to post their events so people can join them, and to view the events as a user (MVP version)
