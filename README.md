@@ -1,6 +1,6 @@
 🌎 EarthMates 🌎
 
-[Visit the EarhtMates Site Here](https://earth-mates.devacademy.nz/)
+[Visit the EarthMates Site Here](https://earth-mates.devacademy.nz/)
 
 Final Project (collaboration with Dev Academy Group)
 
