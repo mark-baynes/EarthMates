@@ -13,7 +13,7 @@ export function userIsAttending(user: string, db = connection) {
     .where({ user })
     .select(
       'events.id as id',
-      'events.name as name',
+      'events.name as eventName',
       'events.location',
       'events.date',
       'events.photo',

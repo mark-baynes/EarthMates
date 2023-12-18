@@ -22,6 +22,29 @@ body {
   font: 14px 'Newsreader', 'Philosopher', Helvetica, Arial, sans-serif
 }
 
+/* About.tsx */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+}
+
+.about-box {
+  color: #426B1F;
+  background-color: rgb(247, 245, 242);
+  padding: 14px 22px;
+  border-radius: 5px;
+  width: 70vw;
+  max-width: 700px;
+  margin: 0;
+}
+
+.about-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
 /* Styling for Header.tsx */
 .header-container {
@@ -63,7 +86,6 @@ label {
 .header-title:hover {
   cursor: pointer;
 }
-
 
 .button-container {
   display: flex;

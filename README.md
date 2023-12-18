@@ -1,12 +1,12 @@
 🌎 EarthMates 🌎
 
-[Visit the EarthMates Site Here](https://earth-mates.devacademy.nz/)
+The focus of this app is to practice using the Full Stack we teach, (with auth in place) in a large scale app.
 
-Final Project (collaboration with Dev Academy Group)
-
-The idea of the app is to create a site for Earth Friendly Events, to post their events so people can join them, and to view the events as a user (MVP version). Potential improvements are contained within the stretch section below. In this project I solidified my inderstanding custom hooks, react query, and auth0.
+The idea of the app is to create a site for Earth Friendly Events, to post their events so people can join them, and to view the events as a user (MVP version)
 
 ## The Tech
+
+A Boilerplate is already set up for you with everything you will need to get started. This boilerplate is set up to use:
 
 * [React](https://reactjs.org/docs/getting-started.html)
 * [React Query](https://tanstack.com/query/v3/docs/react/overview)
@@ -61,4 +61,22 @@ As a registered user:
 
 ## Authentication
 
-Auth0
+Authentication is already set up in the client side of this project using Auth0. Users are currently able to login and logout.
+When you wish to protect your server side routes (those for registered users only), you may need to reference other exercises or materials.
+If you wish to replace the Auth0 authentication with your own, so you can customise the login for example, you will need to update the `client/index.tsx` file of the project with your own Auth0 details.
+
+## Setup
+
+Run the following commands in your terminal:
+
+```sh
+npm install
+npm run dev
+```
+
+To run before merging:
+```sh
+npm run lint
+npm run format
+npm run test
+```
