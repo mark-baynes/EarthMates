@@ -1,5 +1,7 @@
 🌎 EarthMates 🌎
 
+[Visit the EarthMates Site Here](http://earth-mates.devacademy.nz/)
+
 The focus of this app is to practice using the Full Stack we teach, (with auth in place) in a large scale app.
 
 The idea of the app is to create a site for Earth Friendly Events, to post their events so people can join them, and to view the events as a user (MVP version)
